@@ -1,0 +1,10 @@
+<div class="ai-container">
+    <img class="ai-img" [src]="aiProfilePic" alt="ai-avatar">
+    <div class="ai-name">
+        <span *ngIf="isAi;else userPic">{{ aiName }}(AI)</span>
+    </div>
+</div>
+
+<ng-template #userPic>
+        <span>{{ aiName }}(you)</span>
+</ng-template>

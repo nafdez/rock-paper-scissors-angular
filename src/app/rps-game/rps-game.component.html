@@ -1,0 +1,29 @@
+<link rel="stylesheet" type="text/css"
+    href="//fonts.googleapis.com/css?family=Walter+Turncoat" />
+<div class="game-all-container">
+    <div class="game-container">
+        <div class="user-container">
+            <app-profile-pic></app-profile-pic>
+            <app-health-bar [health]="aiHealth"></app-health-bar>
+        </div>
+        <div class="rps-container">
+            <div *ngIf="!gameFinished" class="pick-container">
+                <img id="pickAi" class="pick pickAi"
+                    [src]="aiImagePick">
+                <img id="pickU" class="pick pickUser" [src]="uImagePick">
+            </div>
+            <span class="winner-span">{{ msg }}</span>
+            <button (click)="onRestartClick()" *ngIf="gameFinished"
+                class="play-again-btn"> Play again!</button>
+        </div>
+        <div class="user-container">
+            <app-profile-pic [isAi]="false"></app-profile-pic>
+            <app-health-bar [health]="userHealth"></app-health-bar>
+        </div>
+    </div>
+    <div *ngIf="!gameFinished" class="user-input">
+        <button (click)="userPick(0)" [disabled]="btnDisabled" class="rps-btn rock"></button>
+        <button (click)="userPick(1)" [disabled]="btnDisabled" class="rps-btn paper"></button>
+        <button (click)="userPick(2)" [disabled]="btnDisabled" class="rps-btn scissors"></button>
+    </div>
+</div>

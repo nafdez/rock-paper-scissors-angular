@@ -1,0 +1,121 @@
+.game-all-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-container {
+    display: flex;
+    width: fit-content;
+    height: auto;
+    padding: 12px;
+    border-radius: 16px;
+    background-color: #fbfbfd;
+    filter: drop-shadow(0 0 8px black);
+
+    font-family: Walter Turncoat;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+}
+
+.user-input {
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+    height: auto;
+    margin-top: 32px;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: #fbfbfd;
+    filter: drop-shadow(0 0 8px black);
+}
+
+.rps-container {
+    width: 512px;
+    height: auto;
+    margin-left: 32px;
+    margin-right: 32px;
+    border-radius: 16px;
+    /* border: 2px solid black; */
+    filter: drop-shadow(0 0 4px black);
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rps-btn {
+    width: 128px;
+    height: 128px;
+    background-color: #00000000;
+    border: none;
+    background-repeat: no-repeat;
+}
+
+.rps-btn:hover {
+    filter: drop-shadow(0 0 4px black);
+}
+
+.rps-btn:focus {
+    filter: drop-shadow(0 0 4px red);
+}
+
+.rock {
+    background-image: url(/assets/images/rock.png);
+}
+
+.paper {
+    background-image: url(/assets/images/paper.png);
+}
+
+.scissors {
+    background-image: url(/assets/images/scissors.png);
+}
+
+.rps-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.winner-span {
+    font-size: xx-large;
+}
+
+.pick-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.pick {
+    width: 128px;
+    height: 128px;
+    display: none;
+}
+
+.user-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.play-again-btn {
+    padding: 8px;
+    background-color: #ffe4c4;
+    border-radius: 16px;
+    line-height: 48px;
+    border: 2px solid blanchedalmond;
+    filter: drop-shadow(0 0 4px black);
+    font-size: larger;
+}
+
+.play-again-btn:focus:active {
+    background-color: burlywood;
+}
+
+button {
+    cursor: pointer;
+}

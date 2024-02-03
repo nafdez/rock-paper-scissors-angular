@@ -1,0 +1,38 @@
+.ai-container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 8px;
+    background-color: burlywood;
+    border-radius: 16px;
+    /* border: 2px solid black; */
+    filter: drop-shadow(0 0 4px black);
+}
+
+.ai-img {
+    width: 128px;
+    height: 128px;
+    border-radius: 16px;
+    background-color: #ffe4c4;
+    padding-top: 8px;
+    object-fit: fill;
+    margin-bottom: 8px;
+    border: 2px solid blanchedalmond;
+}
+
+.ai-name {
+    background-color: #ffe4c4;
+    width: 100%;
+    height: 100%;
+    font-size: larger;
+    border-radius: 16px;
+    line-height: 48px;
+    border: 2px solid blanchedalmond;
+    font-size: larger;
+}
+
+span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}

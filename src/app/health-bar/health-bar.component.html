@@ -1,0 +1,11 @@
+<main class="main">
+    <img *ngIf="health >= 1;else voidHeartTemplate" class="heart" [src]="filledHeart" alt>
+    <img *ngIf="health >= 2;else voidHeartTemplate" class="heart" [src]="filledHeart" alt>
+    <img *ngIf="health >= 3;else voidHeartTemplate" class="heart" [src]="filledHeart" alt>
+    <img *ngIf="health >= 4;else voidHeartTemplate" class="heart" [src]="filledHeart" alt>
+    <img *ngIf="health >= 5;else voidHeartTemplate" class="heart" [src]="filledHeart" alt>
+</main>
+
+<ng-template #voidHeartTemplate>
+    <img class="heart" [src]="voidHeart" alt="">
+</ng-template>
